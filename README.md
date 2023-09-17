@@ -122,8 +122,8 @@ Now that you're finished with your analysis in Google Colab, you need to get you
 3. **Summary**
 By optimizing the model, I was able to increase the accuracy from 72% to 78%. This means that I was able to correctly classify each of the points in the test data 78% of the time, which translates to an applicant having a 78% chance of being successful if they have the following:
     - The NAME of the applicant appears more than 5 times (they have applied more than 5 times)
-    - The type of APPLICATION is one of the following: T3, T4, T5, T6 and T19
-    - The application has the following values for CLASSIFICATION: C1000, C1200, C2000,C2100 and C3000.
+    - The type of APPLICATION are T3, T5 and T10.
+    - The application has the following 5 as the top values for CLASSIFICATION: C1000, C2000, C1200, C3000 and C2100.
 
 **Alternative Method**
 
