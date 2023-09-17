@@ -132,6 +132,6 @@ The application has the following values for CLASSIFICATION: C1000, C1200, C2000
 Although this model worked very well and provided a great deal of accuracy, an alternative approach to recommend is the Random Forest model as it is also suited for classification problems. Using the Random Forest model we can achieve close to 77% accuracy, as can be seen in the code.
 
 # Resources: 
-1. Modules 19: In Class Activities
+1. Modules 21: In Class Activities
 2. Class Instructor: Arooj A Qureshi
 3. TA Instructor: Abdelrahman "Abdo" Elewah
