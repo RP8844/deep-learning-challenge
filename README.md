@@ -94,7 +94,7 @@ Now that you're finished with your analysis in Google Colab, you need to get you
 
 # Step 4: Write a Report on the Neural Network Model: Alphabet Soup Charity Analysis Report
 
-1. **Overview** of the analysis: Explain the purpose of this analysis.
+1. **Overview** of the analysis:
   The nonprofit foundation Alphabet Soup wants an effective tool which can help it select the applicants for funding with the best chance of success. Using machine       learning and neural networks, we use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if       funded by Alphabet Soup.
 2. **Results:** Using bulleted lists and images to support your answers, address the following questions:
 
