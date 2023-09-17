@@ -70,8 +70,8 @@ Use any or all of the following methods to optimize your model:
 For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
 
 The report should contain the following:
-  1. **Overview** of the analysis: Explain the purpose of this analysis.
-  2. **Results:** Using bulleted lists and images to support your answers, address the following questions:
+1. **Overview** of the analysis: Explain the purpose of this analysis.
+2. **Results:** Using bulleted lists and images to support your answers, address the following questions:
 
 - Data Preprocessing
     - What variable(s) are the target(s) for your model?
@@ -82,6 +82,7 @@ The report should contain the following:
   - How many neurons, layers, and activation functions did you select for your neural network model, and why?
   - Were you able to achieve the target model performance?
   - What steps did you take in your attempts to increase model performance?
+
 3. **Summary:** Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem,                   and then explain your recommendation.
 
 # Step 5: Copy Files Into Your Repository
@@ -91,55 +92,46 @@ Now that you're finished with your analysis in Google Colab, you need to get you
 2. Move them into your Deep Learning Challenge directory in your local repository.
 3. Push the added files to GitHub.
 
-# Step 4: Writing a Report on the Neural Network Model - Alphabet Soup Charity Analysis Report
+# Step 4: Write a Report on the Neural Network Model: Alphabet Soup Charity Analysis Report
 For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
 
 The report should contain the following:
+1. **Overview** of the analysis: Explain the purpose of this analysis.
+  The nonprofit foundation Alphabet Soup wants an effective tool which can help it select the applicants for funding with the best chance of success. Using machine       learning and neural networks, we use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if       funded by Alphabet Soup.
+2. **Results:** Using bulleted lists and images to support your answers, address the following questions:
 
-Q1- Overview of the analysis: Explain the purpose of this analysis.
+- Data Preprocessing
+- What variable(s) are the target(s) for your model?
+    - The target was the "y" which is the "IS_SUCCESSFUL" column
+- What variable(s) are the features for your model?
+    - The feature is the "X" which is everything but the "IS_SUCCESSFUL" column as: "APPLICATION_TYPE" , "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION",        "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", "ASK_AMT"
+- What variable(s) should be removed from the input data because they are neither targets nor features?
+    - "EIN & "NAME" were removed from the variables, since they are neither targets nor features.
 
-The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. Using machine learning and neural networks, we use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
-Q2- Results: Using bulleted lists and images to support your answers, address the following questions:
+- Compiling, Training, and Evaluating the Model
+- How many neurons, layers, and activation functions did you select for your neural network model, and why?
+      In the Optimized version of the model, I used 3 hidden layers each with multiple neurons which increased the accuracy from 72% to 77%. The Initial model only had two layers. Although the number of epochs did not change between the Initial and the Optimized Model, adding a third layer increased the accuracy of the model.
 
-Data Preprocessing
+- Were you able to achieve the target model performance?
+  - Yes by optimizing the model, I was able to increase the accuracy from 72% to 77%.
 
-What variable(s) are the target(s) for your model?
+- What steps did you take in your attempts to increase model performance? 
+  - I dropped both the EIN and NAME columns
 
-Our target is the "y" which is the "IS_SUCCESSFUL" column
+3. **Summary:** Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
 
-What variable(s) are the features for your model?
+**Summary and Recommendation**
 
-Our features is the "X" which is everything but the "IS_SUCCESSFUL" column as: "APPLICATION_TYPE" , "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION", "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", "ASK_AMT"
+Overall, by optimizing the model, I was able to increase the accuracy from 72% to 77%.
+This means that I was able to correctly classify each of the points in the test data 77% of the time. This translates to an applicant having a 77% chance of being successful if they have the following:
 
-What variable(s) should be removed from the input data because they are neither targets nor features?
+The NAME of the applicant appears more than 5 times (they have applied more than 5 times)
+The type of APPLICATION is one of the following: T3, T4, T5, T6 and T19
+The application has the following values for CLASSIFICATION: C1000, C1200, C2000,C2100 and C3000.
 
-"EIN & "NAME" were removed from variables, since they are neither targets nor features.
+**Alternative Method**
 
-Compiling, Training, and Evaluating the Model
-
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-
-I had 3 tries trying to get to best & higest accuracy
-
-1st try: 2 hidden layers & an outer layer, layer 1: 10 neurons, tanh activation, layer 2: 20 neurons, sigmoid activations, and Outer layer: 1 unit, sigmoid activation & adam optimizers for complier.
-
-2nd try: 3 hidden layers & an outer layer, layer 1: 15 neurons, tanh activation, layer 2: 25 neurons, sigmoid activations, layer 3: 25 neurons, relu activations, and Outer layer: 1 unit, sigmoid & adam optimizers for complier.
-
-3rd try: 3 hidden layers & an outer layer, layer 1: 30 neurons, tanh activation, layer 2: 25 neurons, sigmoid activations, layer 3: 20 neurons, sigmoid activations, and Outer layer: 1 unit, sigmoid & adam optimizers for complier.
-
-Were you able to achieve the target model performance? The best I got accuracy 0.7286
-
-What steps did you take in your attempts to increase model performance? after cleanining & removing none features neither targets, & splitting used the deep neural net & trying diffrent number of layers, activations, optimizers & epochs
-
-Q3- Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
-
-unfortunatly diffrences between all 3 tries was not major unless maybe adding 5 layers & 100's of neurels but that will kill my processor that's why didn't go that far, just did the 2 to 3 layers & between 10-30 neurels on each layers but oticed sigmoid activation is the best for this module.
-1st_try1 1st_try2
-
-2nd_try1 2nd_try2
-
-3rd_try1 3rd_try2
-
+Although this model worked very well and provided a great deal of accuracy, an alternative approach to recommend is the Random Forest model as it is also suited for classification problems. Using the Random Forest model we can achieve close to 77% accuracy, as can be seen in the code.
 
 # Resources: 
 1. Modules 19: In Class Activities
