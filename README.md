@@ -60,11 +60,11 @@ Use any or all of the following methods to optimize your model:
   - Add or reduce the number of epochs to the training regimen.
   **Note:** If you make at least three attempts at optimizing your model, you will not lose points if your model does not achieve target performance.
 
-  1. Create a new Google Colab file and name it AlphabetSoupCharity_Optimization.ipynb.
-  2. Import your dependencies and read in the charity_data.csv to a Pandas DataFrame.
-  3. Preprocess the dataset as you did in Step 1. Be sure to adjust for any modifications that came out of optimizing the model.
-  4. Design a neural network model, and be sure to adjust for modifications that will optimize the model to achieve higher than 75% accuracy.
-  5. Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_Optimization.h5.
+1. Create a new Google Colab file and name it AlphabetSoupCharity_Optimization.ipynb.
+2. Import your dependencies and read in the charity_data.csv to a Pandas DataFrame.
+3. Preprocess the dataset as you did in Step 1. Be sure to adjust for any modifications that came out of optimizing the model.
+4. Design a neural network model, and be sure to adjust for modifications that will optimize the model to achieve higher than 75% accuracy.
+5. Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_Optimization.h5.
 
 # Step 4: Write a Report on the Neural Network Model
 For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
