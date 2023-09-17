@@ -96,8 +96,7 @@ Now that you're finished with your analysis in Google Colab, you need to get you
 
 1. **Overview** of the analysis:
   The nonprofit foundation Alphabet Soup wants an effective tool which can help it select the applicants for funding with the best chance of success. Using machine       learning and neural networks, we use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if       funded by Alphabet Soup.
-2. **Results:** Using bulleted lists and images to support your answers, address the following questions:
-
+2. **Results:** 
 - Data Preprocessing
 - What variable(s) are the target(s) for your model?
     - The target was the "y" which is the "IS_SUCCESSFUL" column
@@ -116,9 +115,7 @@ Now that you're finished with your analysis in Google Colab, you need to get you
 - What steps did you take in your attempts to increase model performance? 
   - I dropped both the EIN and NAME columns
 
-3. **Summary:** Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
-
-**Summary and Recommendation**
+3. **Summary and Recommendation**
 
 Overall, by optimizing the model, I was able to increase the accuracy from 72% to 77%.
 This means that I was able to correctly classify each of the points in the test data 77% of the time. This translates to an applicant having a 77% chance of being successful if they have the following:
