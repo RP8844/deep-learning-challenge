@@ -127,7 +127,7 @@ By optimizing the model, I was able to increase the accuracy from 72% to 78%. Th
 
 **Alternative Method**
 
-Although this model worked very well and provided a great deal of accuracy, an alternative approach that I tried out to see if it would provide more accurate results was the Random Forest model. I chose this model because it's suited for classification problems. Using the Random Forest model, it was interesting to discover and to note that the accuracy decreased by 1%, from 78% accuracy to 76.5% (or 77%), as can be seen in the code. This means that the model which was chosen was the best one suited for this optimization.
+Although this model worked very well and provided a great deal of accuracy, an alternative approach that I tried out (to see if it would provide more accurate results),  was the Random Forest model. I chose this model because it's suited for classification problems. Using the Random Forest model, it was interesting to discover and to note that the accuracy decreased by 1%, from 78% accuracy to 76.5% (or 77%), as can be seen in the code. This means that the model which was chosen was the best one suited for this optimization.
 
 # Resources: 
 1. Modules 21: In Class Activities
