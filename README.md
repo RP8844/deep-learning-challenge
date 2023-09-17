@@ -99,34 +99,35 @@ Now that you're finished with your analysis in Google Colab, you need to get you
 2. **Results:** 
 - Data Preprocessing
 - What variable(s) are the target(s) for your model?
-    - The target was the "y" which is the "IS_SUCCESSFUL" column
+    - The variable for the Target was the column "IS_SUCCESSFUL".
 - What variable(s) are the features for your model?
-    - The feature is the "X" which is everything but the "IS_SUCCESSFUL" column as: "APPLICATION_TYPE" , "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION",        "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", "ASK_AMT"
+    - The columns that were considered as features for the model were: "NAME", "APPLICATION_TYPE" , "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION",        "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", "ASK_AMT"
 - What variable(s) should be removed from the input data because they are neither targets nor features?
     - "EIN & "NAME" were removed from the variables, since they are neither targets nor features.
 
 - Compiling, Training, and Evaluating the Model
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
-      In the Optimized version of the model, I used 3 hidden layers each with multiple neurons which increased the accuracy from 72% to 77%. The Initial model only had two layers. Although the number of epochs did not change between the Initial and the Optimized Model, adding a third layer increased the accuracy of the model.
+      In the Optimized version of the model, I used 3 hidden layers each with multiple neurons which increased the accuracy from 72% to 78%. The Initial model only had two layers. Although the number of epochs did not change between the Initial and the Optimized Model, adding a third layer increased the accuracy of the model.
 
 - Were you able to achieve the target model performance?
-  - Yes by optimizing the model, I was able to increase the accuracy from 72% to 77%.
+  - Yes by optimizing the model, I was able to increase the accuracy from 72% to 78%.
 
 - What steps did you take in your attempts to increase model performance? 
-  - I dropped both the EIN and NAME columns
+  - I dropped both the EIN and NAME columns.
+  - I added a third activation layer from relu as the first and second layer, to tanh as the second layer and sigmoid as the third layer and in this way was able to boost the accuracy to over 79%:
+      - 1st Layer - relu
+      - 2nd Layer - tanh
+      - 3rd Layer - sigmoid
 
-3. **Summary and Recommendation**
-
-Overall, by optimizing the model, I was able to increase the accuracy from 72% to 77%.
-This means that I was able to correctly classify each of the points in the test data 77% of the time. This translates to an applicant having a 77% chance of being successful if they have the following:
-
-The NAME of the applicant appears more than 5 times (they have applied more than 5 times)
-The type of APPLICATION is one of the following: T3, T4, T5, T6 and T19
-The application has the following values for CLASSIFICATION: C1000, C1200, C2000,C2100 and C3000.
+3. **Summary**
+By optimizing the model, I was able to increase the accuracy from 72% to 78%. This means that I was able to correctly classify each of the points in the test data 78% of the time, which translates to an applicant having a 78% chance of being successful if they have the following:
+    - The NAME of the applicant appears more than 5 times (they have applied more than 5 times)
+    - The type of APPLICATION is one of the following: T3, T4, T5, T6 and T19
+    - The application has the following values for CLASSIFICATION: C1000, C1200, C2000,C2100 and C3000.
 
 **Alternative Method**
 
-Although this model worked very well and provided a great deal of accuracy, an alternative approach to recommend is the Random Forest model as it is also suited for classification problems. Using the Random Forest model we can achieve close to 77% accuracy, as can be seen in the code.
+Although this model worked very well and provided a great deal of accuracy, an alternative approach that I tried out to see if it would provide more accurate results was the Random Forest model. I chose this model because it's suited for classification problems. Using the Random Forest model, it was interesting to discover and to note that the accuracy decreased by 1%, from 78% accuracy to 76.5% (or 77%), as can be seen in the code. This means that the model which was chosen was the best one suited for this optimization.
 
 # Resources: 
 1. Modules 21: In Class Activities
