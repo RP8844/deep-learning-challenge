@@ -114,7 +114,7 @@ Now that you're finished with your analysis in Google Colab, you need to get you
 
 - What steps did you take in your attempts to increase model performance? 
   - I dropped both the EIN and NAME columns.
-  - I added a third activation layer from relu as the first and second layer, to tanh as the second layer and sigmoid as the third layer and in this way was able to boost the accuracy to over 79%:
+  - I added a third activation layer from relu as the first and second layer, to tanh as the second layer and sigmoid as the third layer and in this way was able to boost the accuracy to 78%:
       - 1st Layer - relu
       - 2nd Layer - tanh
       - 3rd Layer - sigmoid
